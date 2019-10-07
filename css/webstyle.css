@@ -9,9 +9,8 @@ html {
   background: #7477BF;
   margin: -10px;
   display: grid;
-  grid-gap: 10px;
-  grid-template-areas:
-  'header header header header header header';
+  grid-template-columns: auto auto auto auto auto auto;
+
 }
 
 .App{
@@ -385,20 +384,19 @@ input:checked + .slider:after
   grid-area: main;
 }
 @media (min-width: 768px) {
-  .grid-container{
-    grid-template-columns: 55px 1fr;
-    grid-template-areas:
-    'header header'
-    'nav main'
-  }
-}
+.grid-container{
 
-.main{
-  display: grid;
-}
+grid-template-areas:
+"header header"
+"navigation main";
 
-@media (min-width: 768px) {
-.main {
-grid-template-columns: 50% ;
-  }
+
+ }
+ .main {
+   display: grid;
+   grid-template-columns: 50%;
+ }
+ .daily, .mobile {
+   grid-column: 1 / span 2;
+ }
 }
