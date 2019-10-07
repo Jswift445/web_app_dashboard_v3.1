@@ -31,19 +31,19 @@
       });
 
 //setting up the banner
-const alert = document.getElementById("alert");
+const gotSomething = document.getElementById("alert");
 
 
-alert.innerHTML =
+gotSomething.innerHTML =
 `
  <div class = "alert">
-    <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to
+    <p><strong>Alert</strong> You have <strong>6</strong> overdue tasks to
    complete</p>
    <p class="alert-close">x</p>
   </div>
 `
 
-alert.addEventListener('click', e => {
+gotSomething.addEventListener('click', e => {
 const element = e.target;
 if (element.classList.contains("alert-close")){
   $(".alert").fadeOut("slow");
@@ -112,4 +112,24 @@ let mobileChart = new Chart(mobileCanvas, {
   type: 'doughnut',
   data: mobileData,
   options: mobileOptions
+});
+
+
+const user = document.getElementById("userField");
+const message = document.getElementById("message");
+const send = document.getElementById("send");
+
+send.addEventListener('click', () => {
+  //make sure that the user has filled out the fields
+  if (user.value === "" && message.value === "") {
+    alert("Please fill out user and message fields before sending");
+    } else if (user.value === "" ) {
+    alert("Please fill out user field before sending");
+    } else if (message.value === "" ) {
+    alert("Please fill out message field before sending");
+    } else {
+    alert(`Message successfully sent to: ${user.value}`);
+    }
+
+
 });
