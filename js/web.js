@@ -37,7 +37,7 @@ const gotSomething = document.getElementById("alert");
 gotSomething.innerHTML =
 `
  <div class = "alert">
-    <p><strong>Alert</strong> You have <strong>6</strong> overdue tasks to
+    <p class = "notice"><strong>Alert</strong> You have <strong>6</strong> overdue tasks to
    complete</p>
    <p class="alert-close">x</p>
   </div>
@@ -47,6 +47,7 @@ gotSomething.addEventListener('click', e => {
 const element = e.target;
 if (element.classList.contains("alert-close")){
   $(".alert").fadeOut("slow");
+  $(".dot").hide();
  }
 });
 
@@ -83,7 +84,10 @@ let dailyChart = new Chart(dailyBar, {
 
 // set up doughnut Chart
 const mobileData = {
-  labels: ["Desktop", "Tablet", "Phones"],
+  labels: ["Phones",
+  "Tablet",
+  "Desktop"],
+
   datasets:[{
     label: '# of Users',
     data: [2000, 550, 500],
