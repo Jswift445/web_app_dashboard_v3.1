@@ -977,7 +977,7 @@ input:checked + .slider:after
 }
 
 
-@media (min-width: 1800px) {
+@media (min-width: 1900px) {
   .name {
       color: #fff;
       font-size: 10pt;
@@ -1035,14 +1035,14 @@ input:checked + .slider:after
   }
 
   .alert-close {
-      right: -135em;
+      right: -142em;
       top: -23px;
       position: relative;
   }
 
 .traffic-nav {
       display: flex;
-      margin: -65px 8px 0px 126em;
+      margin: -65px 8px 0px 134em;
       padding: 25px;
       font-size: 8.5pt;
   }
@@ -1065,15 +1065,15 @@ input:checked + .slider:after
 
  .member-border {
      border-left: 1px solid;
-     margin: -36.0em -56px -26em 53em;
+     margin: -36.0em -56px -26em 55em;
  }
 
  .member-line {
-     margin: 30px 60em 24px -76px;
+     margin: 30px 62em 24px -76px;
  }
 
  .date {
-     margin: -22px 0px 0px 39em;
+     margin: -22px 0px 0px 42em;
  }
 
  .post {
