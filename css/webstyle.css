@@ -1035,14 +1035,14 @@ input:checked + .slider:after
   }
 
   .alert-close {
-      right: -142em;
+      right: -135em;
       top: -23px;
       position: relative;
   }
 
-  .traffic-nav {
+.traffic-nav {
       display: flex;
-      margin: -65px 8px 0px 135em;
+      margin: -65px 8px 0px 126em;
       padding: 25px;
       font-size: 8.5pt;
   }
@@ -1063,66 +1063,96 @@ input:checked + .slider:after
      background: #F8F8F8;
  }
 
-.member-border {
+ .member-border {
      border-left: 1px solid;
-     margin: -36.2em -56px -26em 60em;
+     margin: -36.0em -56px -26em 53em;
  }
 
  .member-line {
-    margin: 30px 57em 24px -60px;
+     margin: 30px 60em 24px -76px;
  }
 
-.date {
-    margin: -22px 0px 0px 48em;
+ .date {
+     margin: -22px 0px 0px 39em;
  }
 
-.post {
-     margin: -30em 0px 0px -24em;
+ .post {
+     margin: -30em 0px 0px -28em;
      grid-column: 4;
  }
 
  .recent {
      grid-column: 4 / span 1;
-     margin: -33.2em 0px 0px -373px;
+     margin: -33.2em 0px 0px -445px;
  }
 
- .comment {
-     margin: 0px -19px 26px -4em;
- }
+.comment {
+    margin: 0px 36px 26px -4em;
+}
 
 .set {
-    margin: -5px -362px;
- }
+    margin: -5px -454px;
+}
 
 .set-email {
-    margin: 80px -362px -12px;
- }
+    margin: 80px -454px -12px;
+}
 
- .set-public {
-     margin: 18px -361px;
- }
+.set-public {
+    margin: 18px -451px;
+}
 
- .switch {
-     margin: -9px -2px 0px -143px;
- }
+.switch {
+    margin: -9px -2px 0px -245px;
+}
 
- .form {
-     margin: 54px -360px;
-     width: 150%;
- }
+.form {
+    margin: 54px -449px;
+    width: 150%;
+}
 
 .setting-container {
     margin: -21.5rem 0px 25px;
  }
 
+ .form-field {
+     margin: 25px -16px;
+     height: 35px;
+     width: 87%;
+     border: 1px solid gray;
+     border-radius: 5px;
+     background-color: #F8F8F8;
+ }
+
+
+ .form-area {
+    margin: -5px -16px;
+    width: 87%;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F8F8F8;
+}
+
+.button-primary {
+    display: block;
+    margin: 25px -15px;
+    width: 87%;
+    height: 45px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #7477BF;
+    color: #fff;
+}
+
 #cancel {
     width: 80%;
-    margin: 1px -76em 0px 885px;
- }
+    margin: 1px -76em 0px 772px;
+}
 
  #save {
      width: 69%;
-     margin: 1px -43em 0px 77em;
+     margin: 1px -43em 0px 68em;
  }
 
 .widget-container-full {
