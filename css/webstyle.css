@@ -11,7 +11,7 @@ html,body{
   box-sizing: border-box;
 }
 
-
+@media (min-width: 320px) {
 .grid-container{
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -445,7 +445,7 @@ input:checked + .slider:after
 .main-set{
   grid-area: main-set;
  }
-
+}
 
 @media (min-width: 768px) {
   .grid-container{
@@ -1035,14 +1035,14 @@ input:checked + .slider:after
   }
 
   .alert-close {
-      right: -135em;
+      right: -142em;
       top: -23px;
       position: relative;
   }
 
   .traffic-nav {
       display: flex;
-      margin: -65px 8px 0px 126em;
+      margin: -65px 8px 0px 135em;
       padding: 25px;
       font-size: 8.5pt;
   }
